@@ -1,0 +1,118 @@
+.helpfulnes {
+  &--res {
+    display: none;
+    max-width: 768px;
+    border-radius: 20px;
+    background: $green;
+    p {
+      padding-left: 30px;
+      padding-top: 30px;
+      color: $white;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 600;
+    }
+    h2 {
+      padding-top: 6px;
+      padding-left: 30px;
+      color: $white;
+      font-family: "Open Sans";
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: -1.08px;
+    }
+    &--card {
+      display: flex;
+      &-wrap {
+        position: absolute;
+        margin-left: 140px;
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-left: -30px;
+          color: $white;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-weight: 600;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  h1 {
+    margin-top: 360px;
+    color: $baseblack;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+  }
+
+  &-card {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    align-items: center;
+    margin-top: 30px;
+    gap: 20px;
+    &--wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-radius: 20px;
+      border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+      display: flex;
+      width: 560px;
+      padding: 30px;
+      align-items: center;
+      &--img {
+        padding: 35px;
+        border-radius: 9999px;
+        background: $grey;
+        width: 110px;
+        align-items: center;
+      }
+      h2 {
+        width: 350px;
+        color: $baseblack;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .helpfulnes {
+      &--res {
+        display: block;
+        margin-top: 40px;
+        margin-bottom: -300px;
+      }
+      &-card {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        margin-top: 30px;
+        &--wrap {
+          display: flex;
+          flex-direction: column;
+          width: 359px;
+
+          &--img {
+            width: 54px;
+            padding: 15px;
+            margin-left: -270px;
+            img {
+              width: 24px;
+            }
+          }
+          h2 {
+            width: 319px;
+            font-size: 14px;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}
