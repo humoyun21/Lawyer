@@ -794,7 +794,6 @@ footer {
     margin-top: 30px;
   }
   .question-card--wrap {
-    border: red 1px solid;
     width: 160px;
     display: flex;
   }
@@ -1292,5 +1291,123 @@ footer {
 @media only screen and (max-width: 768px) {
   .lawyers-about {
     display: none;
+  }
+}
+.free {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin-top: 20px;
+  background: var(--Gray-Background, rgba(47, 43, 67, 0.04));
+}
+.free-intro h1 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  width: 295px;
+}
+.free-question-wrap {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.free-question-wrap--ask {
+  width: 201px;
+  border-radius: 10px;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+  background: var(--Base-White, #fff);
+}
+.free-question-wrap--ask p {
+  color: rgba(47, 43, 67, 0.4);
+  padding: 5px;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+}
+.free-question-wrap--ask input {
+  width: 195px;
+  border: none;
+  padding: 5px;
+}
+.free-question-wrap button {
+  border-radius: 10px;
+  background: var(--green, #33836e);
+  display: flex;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+.free-question h2 {
+  margin-top: 18px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
+.freetext h1 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+}
+.freetext h2 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 160%;
+}
+.freetext button {
+  display: flex;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 10px;
+  background: #ebf2f0;
+  color: #33836e;
+  width: 100%;
+  border: none;
+  margin-top: 30px;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  .free {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .free-intro h1 {
+    font-size: 24px;
+    max-width: 768px;
+  }
+  .free-question-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .free-question-wrap--ask {
+    width: 100%;
+  }
+  .free-question-wrap--ask input {
+    width: 100%;
+  }
+  .free-question-wrap button {
+    width: 100%;
+    font-size: 14px;
   }
 }/*# sourceMappingURL=style.css.map */

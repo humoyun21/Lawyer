@@ -1,0 +1,145 @@
+.free {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 20px;
+  margin-top: 20px;
+  background: var(--Gray-Background, rgba(47, 43, 67, 0.04));
+  &-intro {
+    h1 {
+      color: $baseblack;
+      font-family: "Open Sans";
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.96px;
+      width: 295px;
+    }
+  }
+  &-question {
+    &-wrap {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      &--ask {
+        width: 201px;
+        border-radius: 10px;
+        border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+        background: var(--Base-White, #fff);
+        p {
+          color: $greylow;
+          padding: 5px;
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-weight: 400;
+        }
+        input {
+          width: 195px;
+          border: none;
+          padding: 5px;
+        }
+      }
+      button {
+        border-radius: 10px;
+        background: var(--green, #33836e);
+        display: flex;
+        padding: 16px 36px 18px 36px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border: none;
+        color: white;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+      }
+    }
+    h2 {
+      margin-top: 18px;
+      color: $greylow;
+      font-family: "Open Sans";
+      font-size: 12px;
+    }
+  }
+}
+
+.freetext {
+  h1 {
+    color: $baseblack;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+  }
+  h2 {
+    color: $baseblack;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+  button {
+    display: flex;
+    padding: 16px 36px 18px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    border-radius: 10px;
+    background: $grey;
+    color: $green;
+    width: 100%;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .free {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &-intro {
+      h1 {
+        font-size: 24px;
+        max-width: 768px;
+      }
+    }
+    &-question {
+      &-wrap {
+        display: flex;
+        flex-direction: column;
+
+        &--ask {
+          width: 100%;
+
+          input {
+            width: 100%;
+          }
+        }
+        button {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and(max-width:768px) {
+  .freetext {
+    h1 {
+      font-size: 20px;
+      letter-spacing: -0.6px;
+    }
+    h2 {
+      font-size: 14px;
+    }
+    button {
+      font-size: 14px;
+    }
+  }
+}
