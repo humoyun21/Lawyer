@@ -1,34 +1,173 @@
 header {
-    width: 100%;
+  width: 100%;
 
-    // example
+  // example
 
-    .nav {
-        display: flex;
-        height: 70px;
-        align-items: center;
-        justify-content: space-between;
-
-        &__logo {
-            font-style: 24px;
-            cursor: pointer;
-        }
-
-        &__list {
-            display: flex;
-            gap: 50px;
-            list-style-type: none;
-
-            &--item {
-                text-transform: uppercase;
-
-                &-link {
-                    text-decoration: none;
-                    &:hover{
-                        color:red;
-                    }
-                }
-            }
-        }
+  .nav {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    &__menu {
+      background-color: transparent;
+      border: none;
+      display: none;
     }
+    &__logo {
+      font-style: 24px;
+      cursor: pointer;
+    }
+    &__search {
+      display: flex;
+      align-items: center;
+      width: 427px;
+      border-radius: 10px;
+      border: none;
+      input {
+        display: flex;
+        padding: 14px 20px;
+        align-items: center;
+        flex: 1 0 0;
+        display: flex;
+        padding: 14px 20px;
+        align-items: center;
+        flex: 1 0 0;
+        border: none;
+
+        background: var(--Gray-Background, rgba(47, 43, 67, 0.04));
+      }
+      img {
+        margin-left: -40px;
+      }
+    }
+    &__btn {
+      display: flex;
+      height: 52px;
+      padding: 10px 20px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background: var(--green, #33836e);
+      border: none;
+      span {
+        color: var(--Base-White, #fff);
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    &__call {
+      p :nth-child(1) {
+        color: var(--Base-Black, #140a32);
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+      p:nth-child(2) {
+        color: var(--Gray-Medium, rgba(47, 43, 67, 0.5));
+        font-family: "Open Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    &__rescall {
+      display: none;
+    }
+  }
+  .con_about {
+    margin-top: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &_btn {
+      display: flex;
+      gap: 15px;
+    }
+    &__call {
+      width: 202px;
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background-color: white;
+      border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+    }
+    &__call:hover {
+      border-radius: 5px;
+      background: #1a77a3;
+      color: white;
+    }
+    &__tg {
+      width: 144px;
+      display: flex;
+      padding: 10px 20px;
+      align-items: center;
+      gap: 10px;
+      border-radius: 10px;
+      background-color: white;
+      border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+    }
+    &__tg:hover {
+      border-radius: 5px;
+      background: #1a77a3;
+      color: white;
+    }
+    &_contact {
+      display: flex;
+      gap: 30px;
+      li {
+        color: var(--Base-Black, #140a32);
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        list-style: none;
+      }
+    }
+    &_enter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        color: var(--Base-Black, #140a32);
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .nav {
+      border-bottom: #2f2b4326 1px solid;
+      &__menu {
+        display: flex;
+      }
+      &__search {
+        display: none;
+      }
+      &__btn {
+        display: none;
+      }
+      &__call {
+        display: none;
+      }
+      &__rescall {
+        display: flex;
+        gap: 15px;
+      }
+    }
+    .con_about {
+      display: none;
+    }
+  }
 }

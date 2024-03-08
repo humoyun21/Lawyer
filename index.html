@@ -1,42 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="apple-touch-icon" sizes="180x180" href="./public/favicon_io/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="./public/favicon_io/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="./public/favicon_io/favicon-16x16.png" />
-        <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
-        <!-- main css -->
-        <link rel="stylesheet" href="./css/style.min.css" />
-        <title>Document</title>
-    </head>
-    <body>
-        <!-- -------- Header start  ------- -->
-        <header>
-            <div class="container">
-                <nav class="nav">
-                    <a href="" class="nav__logo">LOGO</a>
-                    <ul class="nav__list">
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Home</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">About</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Service</a></li>
-                        <li class="nav__list--item"><a href="#" class="nav__list--item-link">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/favicon_io/site.webmanifest" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Lawyers</title>
+  </head>
+  <body>
+    <!-- -------- Header start  ------- -->
+    <header>
+      <div class="container">
+        <nav class="nav">
+          <button class="nav__menu">
+            <img src="./assets/images/menubtn.svg" alt="" />
+          </button>
+          <a href="" class="nav__logo"
+            ><img src="./assets/images/Logo.svg" alt="logo"
+          /></a>
+          <div class="nav__search">
+            <input type="text" placeholder="Я хочу найти..." />
+            <img src="./assets/images/search.svg" alt="search" />
+          </div>
 
-        <!-- -------- Header end  ------- -->
+          <button class="nav__btn">
+            <img src="./assets/images/chatquestion.svg" alt="chatquestion" />
+            <span>Задать вопрос</span>
+          </button>
+          <div class="nav__call">
+            <p>8 800 302-92-70</p>
+            <p>Бесплатный звонок юристу 24/7</p>
+          </div>
+          <div class="nav__rescall">
+            <img src="./assets/images/searchres.svg" alt="searchres" />
+            <img src="./assets/images/contact.svg" alt="contact" />
+          </div>
+        </nav>
 
-        <main>
-            <!-- sections -->
-        </main>
+        <div class="con_about">
+          <div class="con_about_btn">
+            <button class="con_about__call">
+              <img src="./assets/images/phone.svg" alt="phone" /><span>
+                Заказать звонок
+              </span>
+            </button>
+            <button class="con_about__tg">
+              <img src="./assets/images/telegram.svg" alt="Telegram" /><span>
+                Telegram
+              </span>
+            </button>
+          </div>
+          <ul class="con_about_contact">
+            <li>Отзывы</li>
+            <li>Вопросы</li>
+            <li>Наши юристы</li>
+            <li>Статьи</li>
+            <li>Контакты</li>
+          </ul>
+          <div class="con_about_enter">
+            <img src="./assets/images/contact.svg" alt="contact" />
+            <span>Вход / Регистрация</span>
+          </div>
+        </div>
+      </div>
+    </header>
 
-        <footer>
-            <div class="container">
-                <p>Site footer</p>
-            </div>
-        </footer>
-    </body>
+    <!-- -------- Header end  ------- -->
+
+    <main>
+      <!-- sections -->
+    </main>
+
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </body>
 </html>

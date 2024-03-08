@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -307,8 +308,24 @@ template {
   display: none;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Open Sans;
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-Bold.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-ExtraBold.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-Italic.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-Light.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-Medium.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-Regular.ttf);
+  src: url(../assets/fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
 .container {
-  max-width: 1240px;
+  max-width: 1160px;
   margin: 0 auto;
   width: 100%;
   padding: 0 10px;
@@ -323,23 +340,163 @@ header .nav {
   align-items: center;
   justify-content: space-between;
 }
+header .nav__menu {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
 header .nav__logo {
   font-style: 24px;
   cursor: pointer;
 }
-header .nav__list {
+header .nav__search {
   display: flex;
-  gap: 50px;
-  list-style-type: none;
+  align-items: center;
+  width: 427px;
+  border-radius: 10px;
+  border: none;
 }
-header .nav__list--item {
-  text-transform: uppercase;
+header .nav__search input {
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  flex: 1 0 0;
+  display: flex;
+  padding: 14px 20px;
+  align-items: center;
+  flex: 1 0 0;
+  border: none;
+  background: var(--Gray-Background, rgba(47, 43, 67, 0.04));
 }
-header .nav__list--item-link {
-  text-decoration: none;
+header .nav__search img {
+  margin-left: -40px;
 }
-header .nav__list--item-link:hover {
-  color: red;
+header .nav__btn {
+  display: flex;
+  height: 52px;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--green, #33836e);
+  border: none;
+}
+header .nav__btn span {
+  color: var(--Base-White, #fff);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+header .nav__call p :nth-child(1) {
+  color: var(--Base-Black, #140a32);
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+header .nav__call p:nth-child(2) {
+  color: var(--Gray-Medium, rgba(47, 43, 67, 0.5));
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+header .nav__rescall {
+  display: none;
+}
+header .con_about {
+  margin-top: 37px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .con_about_btn {
+  display: flex;
+  gap: 15px;
+}
+header .con_about__call {
+  width: 202px;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+}
+header .con_about__call:hover {
+  border-radius: 5px;
+  background: #1a77a3;
+  color: white;
+}
+header .con_about__tg {
+  width: 144px;
+  display: flex;
+  padding: 10px 20px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+}
+header .con_about__tg:hover {
+  border-radius: 5px;
+  background: #1a77a3;
+  color: white;
+}
+header .con_about_contact {
+  display: flex;
+  gap: 30px;
+}
+header .con_about_contact li {
+  color: var(--Base-Black, #140a32);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  list-style: none;
+}
+header .con_about_enter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .con_about_enter span {
+  color: var(--Base-Black, #140a32);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media only screen and (max-width: 768px) {
+  header .nav {
+    border-bottom: rgba(47, 43, 67, 0.1490196078) 1px solid;
+  }
+  header .nav__menu {
+    display: flex;
+  }
+  header .nav__search {
+    display: none;
+  }
+  header .nav__btn {
+    display: none;
+  }
+  header .nav__call {
+    display: none;
+  }
+  header .nav__rescall {
+    display: flex;
+    gap: 15px;
+  }
+  header .con_about {
+    display: none;
+  }
 }
 
 main {
