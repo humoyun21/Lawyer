@@ -14,7 +14,7 @@
     font-family: "Open Sans";
     font-size: 16px;
     font-weight: 400;
-    line-height: 160%; /* 25.6px */
+    line-height: 160%;
   }
   h3 {
     color: $baseblack;
@@ -28,7 +28,6 @@
     color: $baseblack;
     font-family: "Open Sans";
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 160%;
     margin-top: 15px;
@@ -50,19 +49,16 @@
       border-radius: 20px;
       border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
       h1 {
-        color: var(--Base-Black, #321a0a);
+        color: $brown;
         font-size: 16px;
         font-weight: 400;
-        line-height: normal;
         margin-top: 0px;
       }
       h2 {
         color: $baseblack;
         font-family: "Open Sans";
         font-size: 20px;
-        font-style: normal;
         font-weight: 700;
-        line-height: normal;
         margin-top: -15px;
       }
       p {
@@ -70,18 +66,14 @@
         text-align: center;
         font-family: "Open Sans";
         font-size: 16px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
       }
       span {
         color: $green;
         text-align: center;
         font-family: "Open Sans";
         font-size: 16px;
-        font-style: normal;
         font-weight: 600;
-        line-height: normal;
       }
     }
   }
@@ -91,11 +83,11 @@
       letter-spacing: -0.6px;
     }
     h2 {
-      max-width: 360px;
+      width: 100%;
       font-size: 14px;
     }
     h3 {
-      max-width: 360px;
+      width: 100%;
       margin-top: 40px;
       font-size: 20px;
       letter-spacing: -0.6px;
@@ -104,20 +96,23 @@
       font-size: 14px;
     }
     &-card {
+      width: 100%;
       display: grid;
       grid-template-columns: repeat(2, auto);
       align-items: flex-start;
       gap: 10px;
       margin-top: 30px;
       &--wrap {
-        width: 175px;
+        border: red 1px solid;
+        width: 160px;
         display: flex;
         h1 {
           width: 135px;
           font-size: 14px;
         }
         h2 {
-          font-size: 18px;
+          font-size: 16px;
+          width: 135px;
         }
         p {
           font-size: 14px;
