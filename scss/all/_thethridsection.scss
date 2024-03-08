@@ -1,0 +1,265 @@
+.thethrid {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+  &-left {
+    h1 {
+      color: $baseblack;
+      font-family: "Open Sans";
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.96px;
+    }
+    h2 {
+      color: $baseblack;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 160%;
+      margin-top: 20px;
+      width: 560px;
+    }
+    &--wrap {
+      display: flex;
+      align-items: center;
+      gap: 48px;
+      margin-top: 30px;
+      p:nth-child(1) {
+        color: $green;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.84px;
+      }
+      p:nth-child(2) {
+        color: $green;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.84px;
+      }
+      p:nth-child(3) {
+        margin-left: 30px;
+        color: $green;
+        font-family: "Open Sans";
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.84px;
+      }
+    }
+    &--wrap1 {
+      display: flex;
+      gap: 48px;
+    }
+  }
+  &-right {
+  }
+
+  @media only screen and (max-width: 768px) {
+    .thethrid {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+
+      &-left {
+        margin-bottom: 300px;
+        h1 {
+          font-size: 20px;
+          letter-spacing: -0.6px;
+        }
+        h2 {
+          font-size: 14px;
+          max-width: 360px;
+        }
+        &--wrap {
+          display: flex;
+          align-items: center;
+          gap: 30px;
+          margin-top: 25px;
+          p:nth-child(1) {
+            font-size: 20px;
+            letter-spacing: -0.6px;
+          }
+          p:nth-child(2) {
+            margin-left: 10px;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+          }
+          p:nth-child(3) {
+            margin-left: 30px;
+            font-size: 20px;
+            letter-spacing: -0.6px;
+          }
+        }
+        &--wrap1 {
+          gap: 10px;
+          p {
+            width: 107px;
+            color: var(--Base-Black, #140a32);
+            font-family: "Open Sans";
+            font-size: 12px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      &-right {
+        margin-top: 250px;
+        margin-left: -400px;
+        width: 360px;
+        height: 247px;
+        flex-shrink: 0;
+        img {
+          width: 360px;
+        }
+      }
+    }
+  }
+}
+.thethrid-bottom {
+  border-radius: 20px;
+  background: $green;
+  display: flex;
+  gap: 200px;
+  margin-top: -5px;
+
+  &--left {
+    padding-left: 60px;
+    margin-top: 50px;
+    h1 {
+      color: $white;
+      font-family: "Open Sans";
+      font-size: 24px;
+      font-weight: 600;
+    }
+    h2 {
+      color: $white;
+      font-family: "Open Sans";
+      font-size: 42px;
+      font-weight: 700;
+      letter-spacing: -1.26px;
+      margin-top: 10px;
+      padding-bottom: 50px;
+    }
+  }
+  &--right {
+    h4 {
+      padding-top: 31px;
+      color: $white;
+      font-family: "Open Sans";
+      font-size: 18px;
+      font-weight: 700;
+    }
+    h5 {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: "Open Sans";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      margin-top: 22px;
+    }
+    &--ask {
+      display: flex;
+      margin-top: 23px;
+      gap: 15px;
+      &--phone {
+        border-radius: 10px;
+        background: var(--Base-White, #fff);
+        padding: 5px;
+        p {
+          color: var(--Gray-Low, rgba(47, 43, 67, 0.4));
+          font-family: "Open Sans";
+          font-size: 12px;
+          font-weight: 400;
+        }
+        input {
+          border: none;
+          padding-top: 20px;
+        }
+      }
+
+      button {
+        color: $white;
+        text-align: center;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 600;
+        background-color: transparent;
+        border-radius: 10px;
+        border: 1px solid var(--Base-White, #fff);
+        padding: 16px 36px 18px 36px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .thethrid-bottom {
+    border-radius: 20px;
+    background: $green;
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+    margin-top: -5px;
+
+    &--left {
+      padding-left: 60px;
+      margin-top: 50px;
+
+      h1 {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 36px;
+        letter-spacing: -1.08px;
+      }
+    }
+    &--right {
+      margin-top: -40px;
+      h4 {
+        padding-left: 10px;
+        font-size: 15px;
+      }
+      h5 {
+        padding-left: 10px;
+        max-width: 768px;
+        font-size: 12px;
+        padding-bottom: 20px;
+
+        margin-top: 22px;
+      }
+      &--ask {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 23px;
+        gap: 15px;
+        &--phone {
+          max-width: 768px;
+          border-radius: 10px;
+          padding: 5px;
+          p {
+            font-size: 12px;
+          }
+          input {
+            border: none;
+            padding-top: 20px;
+          }
+        }
+
+        button {
+          color: $white;
+          text-align: center;
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 600;
+          background-color: transparent;
+          border-radius: 10px;
+          border: 1px solid var(--Base-White, #fff);
+          padding: 16px 36px 18px 36px;
+        }
+      }
+    }
+  }
+}
