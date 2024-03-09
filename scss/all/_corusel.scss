@@ -1,0 +1,149 @@
+h1 {
+  color: $baseblack;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  margin-top: 80px;
+}
+.corusel1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &-wrap {
+    border-radius: 20px;
+    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+    display: flex;
+    width: 367px;
+    height: 421px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    &-card {
+      gap: 15px;
+      align-items: center;
+      display: flex;
+      img {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 999px;
+        background: #115b82;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: $baseblack;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          margin-top: 5px;
+          color: $greylow;
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    h3 {
+      margin-top: 24px;
+      color: $baseblack;
+      font-family: "Open Sans";
+      font-size: 16px;
+      line-height: 160%;
+    }
+    h4 {
+      margin-top: 102px;
+      color: $greylow;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+    }
+    h5 {
+      margin-top: 12px;
+      flex: 1 0 0;
+      color: $green;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      align-self: stretch;
+    }
+  }
+  &-wrap1 {
+    border-radius: 20px;
+    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+    display: flex;
+    width: 367px;
+    height: 421px;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-shrink: 0;
+    &-card {
+      gap: 15px;
+      align-items: center;
+      display: flex;
+      img {
+        display: flex;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 999px;
+        background: #115b82;
+      }
+      &-text {
+        display: flex;
+        flex-direction: column;
+        h2 {
+          color: $baseblack;
+          font-family: "Open Sans";
+          font-size: 18px;
+          font-weight: 600;
+        }
+        p {
+          margin-top: 5px;
+          color: $greylow;
+          font-family: "Open Sans";
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+    h3 {
+      margin-top: 24px;
+      color: $baseblack;
+      font-family: "Open Sans";
+      font-size: 16px;
+      line-height: 160%;
+    }
+    h4 {
+      margin-top: 24px;
+      color: $greylow;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+    }
+    h5 {
+      margin-top: 12px;
+      flex: 1 0 0;
+      color: $green;
+      font-family: "Open Sans";
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 150%;
+      align-self: stretch;
+    }
+  }
+}

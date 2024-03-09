@@ -1410,4 +1410,592 @@ footer {
     width: 100%;
     font-size: 14px;
   }
+}
+@media only screen and (max-width: 768px) {
+  .freetext h1 {
+    font-size: 20px;
+    letter-spacing: -0.6px;
+  }
+  .freetext h2 {
+    font-size: 14px;
+  }
+  .freetext button {
+    font-size: 14px;
+  }
+}
+h1 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.96px;
+  margin-top: 80px;
+}
+
+.corusel1 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.corusel1-wrap {
+  border-radius: 20px;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+  display: flex;
+  width: 367px;
+  height: 421px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.corusel1-wrap-card {
+  gap: 15px;
+  align-items: center;
+  display: flex;
+}
+.corusel1-wrap-card img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background: #115b82;
+}
+.corusel1-wrap-card-text {
+  display: flex;
+  flex-direction: column;
+}
+.corusel1-wrap-card-text h2 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+}
+.corusel1-wrap-card-text p {
+  margin-top: 5px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.corusel1-wrap h3 {
+  margin-top: 24px;
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 160%;
+}
+.corusel1-wrap h4 {
+  margin-top: 102px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+.corusel1-wrap h5 {
+  margin-top: 12px;
+  flex: 1 0 0;
+  color: #33836e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  align-self: stretch;
+}
+.corusel1-wrap1 {
+  border-radius: 20px;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+  display: flex;
+  width: 367px;
+  height: 421px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.corusel1-wrap1-card {
+  gap: 15px;
+  align-items: center;
+  display: flex;
+}
+.corusel1-wrap1-card img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background: #115b82;
+}
+.corusel1-wrap1-card-text {
+  display: flex;
+  flex-direction: column;
+}
+.corusel1-wrap1-card-text h2 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+}
+.corusel1-wrap1-card-text p {
+  margin-top: 5px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.corusel1-wrap1 h3 {
+  margin-top: 24px;
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 160%;
+}
+.corusel1-wrap1 h4 {
+  margin-top: 24px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+}
+.corusel1-wrap1 h5 {
+  margin-top: 12px;
+  flex: 1 0 0;
+  color: #33836e;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+  align-self: stretch;
+}
+
+h1 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 32px;
+  letter-spacing: -0.96px;
+}
+
+.portalwrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.yuristportal {
+  display: flex;
+  flex-direction: column;
+}
+.yuristportal-wrap {
+  margin-top: 20px;
+  display: flex;
+  width: 463px;
+  padding: 20px;
+  align-items: center;
+  gap: 20px;
+  border-radius: 20px;
+  border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+}
+.yuristportal-wrap-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.yuristportal-wrap-card-text {
+  display: flex;
+  flex-direction: column;
+}
+.yuristportal-wrap-card-text h2 {
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+.yuristportal-wrap-card-text h3 {
+  margin-top: 5px;
+  color: #140a32;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.yuristportal-wrap-card-text h4 {
+  margin-top: 10px;
+  color: rgba(47, 43, 67, 0.4);
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.yuristportal button {
+  margin-top: 20px;
+  display: flex;
+  width: 463px;
+  padding: 16px 36px 18px 36px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: #ebf2f0;
+  border: none;
+  color: #33836e;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.sendport {
+  margin-top: 15px;
+  display: inline-flex;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  height: 600px;
+  border-radius: 20px;
+  background: #33836e;
+}
+.sendport-read {
+  display: flex;
+  flex-direction: column;
+}
+.sendport-read h1 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  margin-top: 5px;
+}
+.sendport-read h2 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 18px;
+}
+.sendport-online {
+  position: relative;
+  left: 400px;
+  top: -120px;
+  display: flex;
+  padding: 5px 16px 6px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 10px;
+  background: var(--Base-White, #fff);
+  display: flex;
+}
+.sendport-online p {
+  color: #140a32;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+.sendport-intro input {
+  margin-top: -70px;
+  color: rgba(47, 43, 67, 0.4);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  display: flex;
+  width: 577px;
+  height: 213px;
+  padding: 12px 16px 8px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3px;
+}
+.sendport-wrap {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sendport-wrap-card {
+  border-radius: 10px;
+  background: var(--Base-White, #fff);
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.sendport-wrap-card p {
+  color: rgba(47, 43, 67, 0.4);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+.sendport-wrap-card input {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 180px;
+  gap: 3px;
+  flex: 1 0 0;
+}
+.sendport-wrap-name {
+  border-radius: 10px;
+  background: var(--Base-White, #fff);
+  width: 200px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+.sendport-wrap-name p {
+  color: rgba(47, 43, 67, 0.4);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+.sendport-wrap-name input {
+  border: none;
+  display: flex;
+  width: 180px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3px;
+  flex: 1 0 0;
+}
+.sendport-wrap button {
+  display: flex;
+  padding: 16px 24px 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  border-radius: 10px;
+  background: #140a32;
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+}
+.sendport-text {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+.sendport-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.sendport-text-wrap h5 {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+.sendport-text-wrap p {
+  margin-top: 10px;
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-weight: 400;
+}
+.sendport-text-wrap h6 {
+  color: white;
+  font-family: "Open Sans";
+  font-size: 20px;
+  letter-spacing: -0.6px;
+}
+.sendport h4 {
+  color: #ebf2f0;
+  font-family: "Open Sans";
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.6px;
+  }
+  .portalwrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .yuristportal {
+    display: flex;
+    flex-direction: column;
+  }
+  .yuristportal-wrap {
+    max-width: 360px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .yuristportal-wrap-card {
+    width: 50px;
+    height: 50px;
+    gap: 20px;
+  }
+  .yuristportal-wrap-card img {
+    width: 50px;
+    height: 50px;
+  }
+  .yuristportal-wrap-card-text h2 {
+    font-size: 14px;
+    width: 350px;
+  }
+  .yuristportal-wrap-card-text h3 {
+    margin-top: 5px;
+    font-size: 12px;
+  }
+  .yuristportal-wrap-card-text h4 {
+    font-size: 12px;
+  }
+  .yuristportal button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 16px 36px 18px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: #ebf2f0;
+    border: none;
+    color: #33836e;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .sendport {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  .sendport-read {
+    display: flex;
+    flex-direction: column;
+  }
+  .sendport-read h1 {
+    font-size: 20px;
+  }
+  .sendport-read h2 {
+    font-size: 12px;
+    width: 249px;
+  }
+  .sendport-online {
+    position: relative;
+    left: 5;
+    top: -120px;
+    display: flex;
+    padding: 5px 16px 6px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .sendport-online p {
+    color: #140a32;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+  }
+  .sendport-intro {
+    width: 350px;
+  }
+  .sendport-intro input {
+    width: 300px;
+    margin-top: -70px;
+    display: flex;
+    height: 180px;
+    padding: 12px 12px 7px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+    align-self: stretch;
+  }
+  .sendport-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sendport-wrap-card {
+    display: flex;
+    padding: 5px 12px 7px 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    width: 300px;
+    align-self: stretch;
+  }
+  .sendport-wrap-card p {
+    color: rgba(47, 43, 67, 0.4);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
+  .sendport-wrap-card input {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .sendport-wrap-name {
+    border-radius: 10px;
+    background: var(--Base-White, #fff);
+    width: 200px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    width: 300px;
+  }
+  .sendport-wrap-name p {
+    color: rgba(47, 43, 67, 0.4);
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
+  .sendport-wrap-name input {
+    border: none;
+    display: flex;
+    width: 180px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3px;
+    flex: 1 0 0;
+  }
+  .sendport-wrap button {
+    display: flex;
+    padding: 15px 24px 16px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+  }
+  .sendport-text {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .sendport-text-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .sendport-text-wrap h5 {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+  .sendport-text-wrap p {
+    font-size: 12px;
+  }
+  .sendport-text-wrap h6 {
+    font-size: 16px;
+    letter-spacing: -0.48px;
+  }
+  .sendport h4 {
+    color: #ebf2f0;
+    font-family: "Open Sans";
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=style.css.map */
