@@ -1,149 +1,132 @@
-h1 {
-  color: $baseblack;
-  font-family: "Open Sans";
-  font-size: 32px;
-  font-weight: 700;
-  letter-spacing: -0.96px;
-  margin-top: 80px;
-}
-.corusel1 {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  &-wrap {
-    border-radius: 20px;
-    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
-    display: flex;
-    width: 367px;
-    height: 421px;
-    padding: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
-    &-card {
-      gap: 15px;
-      align-items: center;
-      display: flex;
-      img {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 999px;
-        background: #115b82;
+#our_clients {
+  .container {
+    .our_clients {
+      overflow: hidden;
+      position: relative;
+      h5 {
+        color: var(--Base-Black, #140a32);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: -0.96px;
+        margin-bottom: 30px;
       }
-      &-text {
+
+      ul {
         display: flex;
-        flex-direction: column;
-        h2 {
-          color: $baseblack;
-          font-family: "Open Sans";
-          font-size: 18px;
-          font-weight: 600;
-        }
-        p {
-          margin-top: 5px;
-          color: $greylow;
-          font-family: "Open Sans";
-          font-size: 16px;
-          font-weight: 400;
+        gap: 15px;
+        transition: all 0.2s linear;
+        li {
+          display: flex;
+          width: 367px;
+          height: 421px;
+          padding: 30px;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-shrink: 0;
+          border-radius: 20px;
+          border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+
+          div {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+              padding: 13px;
+              border-radius: 999px;
+              background: #115b82;
+            }
+
+            div {
+              display: block;
+              h6 {
+                color: var(--Base-Black, #140a32);
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+              }
+
+              p {
+                color: var(--Gray-Medium, rgba(47, 43, 67, 0.5));
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+              }
+            }
+          }
+
+          .text_p_js {
+            color: var(--Base-Black, #140a32);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            height: 182px;
+            margin-bottom: 24px;
+          }
+
+          p:nth-child(3) {
+            color: var(--Gray-Medium, rgba(47, 43, 67, 0.5));
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 12px;
+          }
+
+          p:nth-child(4) {
+            color: var(--green, #33836e);
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 150%; /* 24px */
+          }
         }
       }
-    }
-    h3 {
-      margin-top: 24px;
-      color: $baseblack;
-      font-family: "Open Sans";
-      font-size: 16px;
-      line-height: 160%;
-    }
-    h4 {
-      margin-top: 102px;
-      color: $greylow;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 400;
-    }
-    h5 {
-      margin-top: 12px;
-      flex: 1 0 0;
-      color: $green;
-      font-family: "Open Sans";
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 150%;
-      align-self: stretch;
+
+      #right-turn {
+        position: absolute;
+        font-size: 20px;
+        right: 0px;
+        top: 55%;
+        background: #999898;
+        border-radius: 30%;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border: noen;
+      }
+
+      #left-turn {
+        border: none;
+        padding: 15px;
+        background: #999898;
+        border-radius: 30%;
+        color: white;
+        cursor: pointer;
+        left: 0px;
+        top: 55%;
+        position: absolute;
+        font-size: 20px;
+      }
     }
   }
-  &-wrap1 {
-    border-radius: 20px;
-    border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
-    display: flex;
-    width: 367px;
-    height: 421px;
-    padding: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-shrink: 0;
-    &-card {
-      gap: 15px;
-      align-items: center;
-      display: flex;
-      img {
-        display: flex;
-        width: 50px;
-        height: 50px;
-        padding: 13px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 999px;
-        background: #115b82;
-      }
-      &-text {
-        display: flex;
-        flex-direction: column;
-        h2 {
-          color: $baseblack;
-          font-family: "Open Sans";
-          font-size: 18px;
-          font-weight: 600;
-        }
-        p {
-          margin-top: 5px;
-          color: $greylow;
-          font-family: "Open Sans";
-          font-size: 16px;
-          font-weight: 400;
+}
+
+@media only screen and (max-width: 768px) {
+  #our_clients {
+    .container {
+      .our_clients {
+        h5 {
+          font-size: 20px;
+          padding: 0 10px;
         }
       }
-    }
-    h3 {
-      margin-top: 24px;
-      color: $baseblack;
-      font-family: "Open Sans";
-      font-size: 16px;
-      line-height: 160%;
-    }
-    h4 {
-      margin-top: 24px;
-      color: $greylow;
-      font-family: "Open Sans";
-      font-size: 14px;
-      font-weight: 400;
-    }
-    h5 {
-      margin-top: 12px;
-      flex: 1 0 0;
-      color: $green;
-      font-family: "Open Sans";
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 150%;
-      align-self: stretch;
     }
   }
 }

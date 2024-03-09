@@ -1,4 +1,52 @@
-footer{
-    width: 100%;
-    // codes
+.info {
+  margin-bottom: 274px;
+  h1 {
+    color: $baseblack;
+    font-family: "Open Sans";
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.96px;
+  }
+  &-wrap {
+    display: flex;
+    gap: 20px;
+    &-card {
+      width: 270px;
+      h1 {
+        color: $baseblack;
+        font-family: "Open Sans";
+        font-size: 24px;
+      }
+      h2 {
+        margin-top: 10px;
+        color: $baseblack;
+        font-family: "Open Sans";
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .info {
+    margin-bottom: 157px;
+    h1 {
+      font-size: 20px;
+      letter-spacing: -0.6px;
+    }
+    &-wrap {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      gap: 20px;
+      &-card {
+        width: 175px;
+        h1 {
+          font-size: 18px;
+        }
+        h2 {
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }

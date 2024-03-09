@@ -15,24 +15,25 @@
       justify-content: space-between;
       padding: 20px;
       border-radius: 20px;
-      border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+      border: 1px solid $greyborder;
       width: 560px;
       &-intro {
         display: flex;
         align-items: center;
         gap: 15px;
+        img {
+          padding-top: 70px;
+        }
         h1 {
-          color: var(--Base-Black, #140a32);
+          color: $baseblack;
           font-family: "Open Sans";
           font-size: 16px;
-          font-style: normal;
           font-weight: 600;
-          line-height: normal;
           border-bottom: $green 2px solid;
         }
       }
       h2 {
-        color: var(--Gray-High, rgba(47, 43, 67, 0.7));
+        color: $greyhigh;
         font-family: "Open Sans";
         font-size: 14px;
         font-weight: 400;
@@ -59,7 +60,7 @@
         justify-content: space-between;
         padding: 20px;
         border-radius: 20px;
-        border: 1px solid var(--Gray-Borders, rgba(47, 43, 67, 0.15));
+        border: 1px solid $greyborder;
         width: 100%;
         &-intro {
           display: flex;
